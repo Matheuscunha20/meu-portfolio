@@ -1,0 +1,28 @@
+---
+// 1. O "CÉREBRO" COMEÇA AQUI
+import "../styles/global.css"; // Vamos importar isso agora
+import Hero from "../components/Hero.astro"; // Vamos criar este
+import Servicos from "../components/Servicos.astro";
+import Projetos from "../components/Projetos.astro";
+import SobreMim from "../components/SobreMim.astro";
+import Contato from "../components/Contato.astro";
+import Footer from "../components/Footer.astro";
+
+// 2. O "CÉREBRO" TERMINA AQUI
+---
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Meu Portfólio | Desenvolvedor de Sites</title>
+  </head>
+  <body>
+    <Hero />
+	<Servicos />
+	<Projetos />
+	<SobreMim />
+	<Contato />
+    <Footer />
+  </body>
+</html>

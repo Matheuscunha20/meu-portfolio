@@ -1,0 +1,34 @@
+---
+// Imagem de perfil
+const imagemPerfil = "/images/perfil.jpg";
+---
+
+<section class="bg-white py-16 md:py-24">
+  <div class="container mx-auto max-w-5xl px-6">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-3 md:items-center">
+      <div class="md:col-span-1">
+        <img
+          src={imagemPerfil}
+          alt="Foto de perfil"
+          class="aspect-square h-64 w-64 rounded-full object-cover mx-auto shadow-lg"
+        />
+      </div>
+
+      <div class="md:col-span-2 text-center md:text-left">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+          Sobre Mim
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-700">
+          Olá! Eu sou Matheus, um desenvolvedor focado em transformar
+          ideias em realidade digital. Minha paixão é construir sites rápidos,
+          intuitivos e que geram resultados reais para negócios.
+        </p>
+        <p class="mt-4 text-lg leading-8 text-gray-700">
+          Meu objetivo não é apenas entregar código, mas sim entender o seu
+          problema e entregar a **solução completa**, do design à
+          performance, para que você não precise se preocupar com nada técnico.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

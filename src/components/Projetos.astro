@@ -1,0 +1,54 @@
+---
+// A imagem que você acabou de salvar (agora com o nome correto)
+const projetoImagem = "/images/projeto-confeitaria.jpg";
+---
+
+<section class="bg-gray-50 py-16 md:py-24">
+  <div class="container mx-auto max-w-5xl px-6">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+        Projetos Recentes
+      </h2>
+      <p class="mt-4 text-lg leading-8 text-gray-600">
+        Veja como eu transformo ideias em sites de alta performance.
+      </p>
+    </div>
+
+    <div class="mt-16 overflow-hidden rounded-lg bg-white shadow-lg md:grid md:grid-cols-2 md:gap-8">
+      <div class="md:col-span-1">
+        <img
+          src={projetoImagem}
+          alt="Screenshot do projeto Confeitaria Doce Sabor"
+          class="h-full w-full object-cover"
+        />
+      </div>
+
+      <div class="md:col-span-1 p-8 md:p-12">
+        <h3 class="text-2xl font-semibold text-gray-900">
+          Landing Page para Confeitaria
+        </h3>
+        
+        <p class="mt-4 text-lg text-gray-700">
+          <strong class="text-gray-900">O Desafio:</strong>
+          Criar uma "vitrine digital" atraente para uma confeitaria local, que fosse rápida e fácil de usar no celular.
+        </p>
+        <p class="mt-4 text-lg text-gray-700">
+          <strong class="text-gray-900">A Solução:</strong>
+          Desenvolvi uma Landing Page de 6 seções usando Astro e Tailwind, focada em performance (Nota A no PageSpeed) e com "CTAs" claros para WhatsApp e formulário de encomendas.
+        </p>
+        <p class="mt-4 text-lg text-gray-700">
+          <strong class="text-gray-900">Tecnologias:</strong> Astro, Tailwind CSS.
+        </p>
+
+        <div class="mt-8">
+          <a
+            href="#"
+            class="rounded-md bg-pink-600 px-6 py-2 text-base font-semibold text-white shadow-sm transition-transform hover:bg-pink-700 hover:scale-105"
+          >
+            Ver Demo Ao Vivo (Em breve)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
