@@ -1,29 +1,35 @@
 ---
-// Imagem de perfil
-const imagemPerfil = "/images/perfil.jpg";
+const imagemPerfil = "/images/perfil-matheus.jpg";
 ---
 
-<section class="bg-white py-16 md:py-24">
-  <div class="container mx-auto max-w-5xl px-6">
+<section class="relative overflow-hidden bg-gray-900 py-16 md:py-24">
+  <div class="absolute top-0 right-0 -mt-20 -mr-20 h-96 w-96 rounded-full bg-blue-600/10 blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 -mb-20 -ml-20 h-96 w-96 rounded-full bg-purple-600/10 blur-3xl"></div>
+
+  <div class="container relative z-10 mx-auto max-w-5xl px-6">
     <div class="grid grid-cols-1 gap-12 md:grid-cols-3 md:items-center">
-      <div class="md:col-span-1">
-        <img
-          src={imagemPerfil}
-          alt="Foto de perfil"
-          class="aspect-square h-64 w-64 rounded-full object-cover mx-auto shadow-lg"
-        />
+      
+      <div class="md:col-span-1 flex justify-center">
+        <div class="relative">
+          <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 blur-md opacity-70"></div>
+          <img
+            src={imagemPerfil}
+            alt="Matheus - Desenvolvedor"
+            class="relative aspect-square h-64 w-64 rounded-full object-cover border-4 border-gray-900 shadow-2xl"
+          />
+        </div>
       </div>
 
       <div class="md:col-span-2 text-center md:text-left">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+        <h2 class="text-3xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 md:text-4xl">
           Sobre Mim
         </h2>
-        <p class="mt-6 text-lg leading-8 text-gray-700">
-          Olá! Eu sou Matheus, um desenvolvedor focado em transformar
-          ideias em realidade digital. Minha paixão é construir sites rápidos,
-          intuitivos e que geram resultados reais para negócios.
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          Olá! Eu sou <strong class="text-white">Matheus</strong>, um desenvolvedor focado em
+          transformar ideias em realidade digital. Minha paixão é construir
+          sites rápidos, intuitivos e que geram resultados reais para negócios.
         </p>
-        <p class="mt-4 text-lg leading-8 text-gray-700">
+        <p class="mt-4 text-lg leading-8 text-gray-300">
           Meu objetivo não é apenas entregar código, mas sim entender o seu
           problema e entregar a **solução completa**, do design à
           performance, para que você não precise se preocupar com nada técnico.
