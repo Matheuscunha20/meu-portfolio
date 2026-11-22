@@ -2,7 +2,7 @@
 
 Site institucional da **GenesisTec**, uma página única com tema futurista: fundo de partículas animado, cursor personalizado, animações ao rolar a página e layout responsivo.
 
-🔗 **Acesse:** https://genesistec.dev.br
+🔗 **Acesse:** https://www.genesistec.dev.br
 
 ## Seções
 - **Início**: apresentação com a logo e as chamadas principais
