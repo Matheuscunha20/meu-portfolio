@@ -8,7 +8,7 @@ Site institucional da **GenesisTec**, uma página única com tema futurista: fun
 - **Início**: apresentação com a logo e as chamadas principais
 - **Projetos**: cards com os projetos em destaque
 - **Sobre**: quem sou e números
-- **Contato**: WhatsApp, GitHub, LinkedIn e um formulário que abre a conversa no WhatsApp com a mensagem pronta
+- **Contato**: e-mail, WhatsApp, GitHub, LinkedIn e um formulário que abre a conversa no WhatsApp com a mensagem pronta
 
 ## Tecnologias
 - HTML5
