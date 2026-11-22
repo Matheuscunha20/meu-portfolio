@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenesisTec — Inovação Digital</title>
+  <meta name="description" content="GenesisTec — soluções digitais de alta performance: sistemas web, automação, dashboards e aplicativos sob medida.">
+  <meta name="theme-color" content="#050810">
+  <meta property="og:title" content="GenesisTec — Inovação Digital">
+  <meta property="og:description" content="Soluções digitais de alta performance. Tecnologia que conecta pessoas, sistemas e possibilidades.">
+  <meta property="og:image" content="https://genesistec.dev.br/assets/LOGOO.png">
+  <meta property="og:url" content="https://genesistec.dev.br/">
+  <link rel="canonical" href="https://genesistec.dev.br/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="assets/LOGOO.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:ital,wght@0,100;0,300;0,400;0,600;0,900;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="#home" class="nav-logo">
+      <img src="assets/LOGOO.png" alt="GenesisTec Logo">
+      <span>GENESISTEC</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HOME ===== -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-content">
+        <img src="assets/LOGOO.png" alt="GenesisTec" class="hero-logo">
+        <p class="hero-eyebrow">Bem-vindo ao futuro digital</p>
+        <h1 class="hero-title">GENESIS<br>TEC</h1>
+        <p class="hero-subtitle">
+          Soluções digitais sob medida: sistemas web, aplicativos e automações que conectam pessoas, processos e possibilidades.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projetos" class="btn-primary"><span>Ver Projetos</span></a>
+          <a href="#contato" class="btn-secondary">Fale Comigo</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== PROJETOS ===== -->
+  <section id="projetos">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Meu Trabalho</div>
+        <h2 class="section-title">Projetos em <em>Destaque</em></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal">
+          <div class="project-corner"></div>
+          <span class="project-tag">Destaque · SaaS</span>
+          <div class="project-icon">🐄</div>
+          <h3 class="project-title">AgroArca</h3>
+          <p class="project-desc">Sistema de gestão para criadores de animais, para qualquer tipo de criação, não só aves. Controle do rebanho, manejo e produção num só lugar. "Cuide do seu rebanho como um bom pastor."</p>
+          <div class="project-tech">
+            <span class="tech-badge">C#</span>
+            <span class="tech-badge">ASP.NET Core 8</span>
+            <span class="tech-badge">MySQL</span>
+          </div>
+          <a class="project-link" href="https://github.com/Matheuscunha20/SistemaDeGerenciamentoDeGranja" target="_blank" rel="noopener"><span>Ver no GitHub</span> →</a>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-corner"></div>
+          <span class="project-tag">SaaS · Em desenvolvimento</span>
+          <div class="project-icon">📈</div>
+          <h3 class="project-title">CRM Inteligente</h3>
+          <p class="project-desc">CRM web para pequenas e médias empresas: clientes e contatos, funil de vendas com etapas editáveis, atividades e indicadores, com perfis de Administrador, Gestor e Vendedor.</p>
+          <div class="project-tech">
+            <span class="tech-badge">.NET 10</span>
+            <span class="tech-badge">Blazor WebAssembly</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">Docker</span>
+          </div>
+          <a class="project-link" href="https://github.com/Matheuscunha20/crm-inteligente" target="_blank" rel="noopener"><span>Ver no GitHub</span> →</a>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-corner"></div>
+          <span class="project-tag">Games</span>
+          <div class="project-icon">🃏</div>
+          <h3 class="project-title">Forja de Heróis</h3>
+          <p class="project-desc">Gerador de super-heróis com cards colecionáveis: país, cidade de origem, poderes e ficha técnica gerados em C#, com arte, contas de usuário e créditos.</p>
+          <div class="project-tech">
+            <span class="tech-badge">C#</span>
+            <span class="tech-badge">.NET 10</span>
+            <span class="tech-badge">Blazor</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">Identity</span>
+          </div>
+          <span class="project-link is-private">🔒 Repositório privado</span>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-corner"></div>
+          <span class="project-tag">Mobile</span>
+          <div class="project-icon">🦖</div>
+          <h3 class="project-title">Dinodex</h3>
+          <p class="project-desc">Aplicativo de dinossauros no estilo Pokédex, com grade de cards, busca, filtro por período geológico e página de detalhe de cada espécie.</p>
+          <div class="project-tech">
+            <span class="tech-badge">C#</span>
+            <span class="tech-badge">.NET MAUI</span>
+            <span class="tech-badge">Blazor Hybrid</span>
+          </div>
+          <span class="project-link is-private">🔒 Repositório privado</span>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-corner"></div>
+          <span class="project-tag">Dados & IA</span>
+          <div class="project-icon">🌦️</div>
+          <h3 class="project-title">AeroClima</h3>
+          <p class="project-desc">Projeto em grupo da UNIVESP: dashboard de clima e qualidade do ar com previsão das próximas 3 horas feita por modelos de IA, a partir da API OpenWeatherMap.</p>
+          <div class="project-tech">
+            <span class="tech-badge">Machine Learning</span>
+            <span class="tech-badge">OpenWeatherMap API</span>
+            <span class="tech-badge">Dashboard</span>
+          </div>
+          <a class="project-link" href="https://github.com/GiihFT/projeto_clima" target="_blank" rel="noopener"><span>Ver no GitHub</span> →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-logo-wrap">
+            <div class="about-logo-inner">
+              <img src="assets/LOGOO.png" alt="GenesisTec" class="about-logo-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal reveal-delay-1">
+          <div class="section-header">
+            <div class="section-tag">Quem está por trás</div>
+            <h2 class="section-title">Quem <em>Sou</em></h2>
+          </div>
+          <p class="about-desc">
+            A GenesisTec é o meu estúdio de desenvolvimento. Sou Matheus Cunha, estudante de Engenharia de Computação na UNIVESP, e desenvolvo sistemas web, aplicativos e automações com foco em C# e .NET.
+          </p>
+          <p class="about-desc">
+            Trabalho do começo ao fim de cada projeto: entendo o problema, desenho a solução, escrevo o código e coloco no ar. Antes de programar, atuei com ERP, banco de dados e mapeamento de processos, e essa experiência me ajuda a criar sistemas que fazem sentido para quem usa no dia a dia.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-num">7+</div>
+              <div class="stat-label">Projetos</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">2+</div>
+              <div class="stat-label">Anos de código</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">.NET</div>
+              <div class="stat-label">Especialidade</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Fale Comigo</div>
+        <h2 class="section-title">Vamos <em>Criar</em> Juntos</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-desc">
+            Tem um projeto em mente? Me conta sua ideia e vamos conversar sobre como transformá-la num sistema que funcione de verdade para o seu negócio.
+          </p>
+          <div class="contact-items">
+            <a class="contact-item" href="https://wa.me/5511952992888" target="_blank" rel="noopener">
+              <div class="contact-item-icon">💬</div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">WhatsApp</span>
+                <span class="contact-item-value">+55 (11) 9 5299-2888</span>
+              </div>
+            </a>
+            <a class="contact-item" href="https://github.com/Matheuscunha20" target="_blank" rel="noopener">
+              <div class="contact-item-icon">💻</div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-value">github.com/Matheuscunha20</span>
+              </div>
+            </a>
+            <a class="contact-item" href="https://www.linkedin.com/in/matheus-cunha-dev" target="_blank" rel="noopener">
+              <div class="contact-item-icon">🔗</div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">in/matheus-cunha-dev</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Localização</span>
+                <span class="contact-item-value">São Paulo, Brasil</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal reveal-delay-1" id="contactForm" data-whatsapp="5511952992888">
+          <div class="form-group">
+            <label for="f-nome">Nome</label>
+            <input type="text" id="f-nome" name="nome" autocomplete="name" placeholder="Seu nome completo" required>
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" autocomplete="email" placeholder="seu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="f-projeto">Projeto</label>
+            <input type="text" id="f-projeto" name="projeto" placeholder="Descreva brevemente seu projeto">
+          </div>
+          <div class="form-group">
+            <label for="f-mensagem">Mensagem</label>
+            <textarea id="f-mensagem" name="mensagem" placeholder="Conte mais detalhes..." required></textarea>
+          </div>
+          <div class="form-submit">
+            <p class="form-note">Ao enviar, a conversa abre no WhatsApp com sua mensagem pronta.</p>
+            <button type="submit" class="btn-primary"><span>Enviar Mensagem</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/LOGOO.png" alt="GenesisTec">
+      <span>GENESISTEC</span>
+    </div>
+    <p class="footer-copy">© <span id="year">2026</span> GenesisTec. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

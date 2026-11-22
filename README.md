@@ -1,43 +1,44 @@
-# Astro Starter Kit: Minimal
+# GenesisTec — Inovação Digital
 
-```sh
-npm create astro@latest -- --template minimal
+Site institucional da **GenesisTec**, uma página única com tema futurista: fundo de partículas animado, cursor personalizado, animações ao rolar a página e layout responsivo.
+
+🔗 **Acesse:** https://genesistec.dev.br
+
+## Seções
+- **Início**: apresentação com a logo e as chamadas principais
+- **Projetos**: cards com os projetos em destaque
+- **Sobre**: quem sou e números
+- **Contato**: WhatsApp, GitHub, LinkedIn e um formulário que abre a conversa no WhatsApp com a mensagem pronta
+
+## Tecnologias
+- HTML5
+- CSS3 (variáveis, grid, animações, media queries)
+- JavaScript puro (Canvas API, IntersectionObserver)
+- Hospedagem: Vercel (domínio genesistec.dev.br)
+
+## Destaques técnicos
+- Fundo de partículas em `<canvas>`, com menos partículas no celular para não pesar
+- Cursor personalizado só em computador com mouse (em celular e tablet fica o padrão)
+- Menu mobile com animação de "X", fecha com Esc ou ao clicar em um link
+- Respeita a configuração "reduzir movimento" do sistema (`prefers-reduced-motion`)
+- Sem dependências e sem build: é só abrir o `index.html`
+
+## Como rodar localmente
+```bash
+git clone https://github.com/Matheuscunha20/meu-portfolio.git
+cd meu-portfolio
+# abra o index.html no navegador
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+## Estrutura
+```
+meu-portfolio/
+├── assets/      # logo e imagens
+├── index.html
+├── style.css
+├── script.js
+└── vercel.json  # site estático, sem etapa de build
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+Desenvolvido por [Matheus Cunha](https://www.linkedin.com/in/matheus-cunha-dev)
